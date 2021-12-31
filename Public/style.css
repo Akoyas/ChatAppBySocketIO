@@ -214,7 +214,7 @@ ul li .msg-member {
   overflow-y: scroll;
   list-style-image: url(circle-solid.svg);
   border: 1px solid gray;
-  padding: 5px 5px 5px 30px;  /* 上右下左 */
+  padding: 5px 5px 5px 30px;  
   margin-left: 10px;
 }
 .member-me{
