@@ -59,6 +59,7 @@ ul li .msg-member :before {
 }
 ul li .msg-member {
     display: inline-block;
+    float:left;
     position: relative;
     background-color: white;
     border-radius: 10px;
