@@ -47,7 +47,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.#frm-myname button:hover:after {
+#frm-myname button:hover:after {
     border-color: #FFF;
 }
 
@@ -166,7 +166,7 @@ ul li .msg-member {
         transition: 0.3s ease-in-out;
     }
 
-.#frm-post button:hover:after {
+#frm-post button:hover:after {
     border-color: #FFF;
 }
 
@@ -262,7 +262,7 @@ ul li .msg-member {
         transition: 0.3s ease-in-out;
     }
 
-.#frm-quit button:hover:after {
+#frm-quit button:hover:after {
     border-color: #FFF;
 }
 
