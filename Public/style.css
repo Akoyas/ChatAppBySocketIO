@@ -1,9 +1,6 @@
 
 @charset "utf8";
 
-/*-------------------------
- * STEP2
- *-------------------------*/
 #inputmyname{
   display:none;
 }
@@ -52,14 +49,6 @@
     border-color: #FFF;
 }
 
-/*-------------------------
- * STEP3
- *-------------------------*/
-
-
-/*-----------------------------------------------*/
-/*-----------------------------------------------*/
-
 ul li:before .msg-me {
     content: '';
     /* position: absolute;*/
@@ -79,7 +68,7 @@ ul li .msg-me {
 
 ul li:before .msg-member {
     content: '';
-    /* position: absolute;*/
+    position: absolute;
     top: 8px;
     left: -40px;
     border: 12px solid transparent;
