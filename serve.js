@@ -152,8 +152,8 @@ io.on("connection", (socket)=>{
 /**
  * 3000番でサーバを起動する
  */
-http.listen(3141, ()=>{
-  console.log("listening on *:3141");
+http.listen(3001, ()=>{
+  console.log("listening on *:3001");
 });
 
 
