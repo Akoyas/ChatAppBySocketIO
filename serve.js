@@ -74,7 +74,7 @@ io.on("connection", (socket)=>{
    */
   socket.on("join", (data)=>{
     //--------------------------
-    // トークンが正しければ
+    // トークンが正しい場合
     //--------------------------
     if( authToken(socket.id, data.token) ){
       // 入室OK + 現在の入室者一覧を通知
@@ -89,7 +89,7 @@ io.on("connection", (socket)=>{
       socket.broadcast.emit("member-join", {name:data.name, token:MEMBER[socket.id].count});
     }
     //--------------------------
-    // トークンが誤っていた場合
+    // トークンが正しくない場合
     //--------------------------
     else{
       // 本人にNG通知
@@ -102,7 +102,7 @@ io.on("connection", (socket)=>{
    */
   socket.on("post", (data)=>{
     //--------------------------
-    // トークンが正しければ
+    // トークンが正しい場合
     //--------------------------
     if( authToken(socket.id, data.token) ){
       // 本人に通知
@@ -120,7 +120,7 @@ io.on("connection", (socket)=>{
    */
   socket.on("quit", (data)=>{
     //--------------------------
-    // トークンが正しければ
+    // トークンが正しい場合
     //--------------------------
     if( authToken(socket.id, data.token) ){
       // 本人に通知
@@ -133,10 +133,10 @@ io.on("connection", (socket)=>{
       delete MEMBER[socket.id];
     }
     //--------------------------
-    // トークンが誤っていた場合
+    // トークンが正しくない場合
     //--------------------------
     else{
-      // 本人にNG通知
+      // 通知
       io.to(socket.id).emit("quit-result", {status: false});
     }
   });
