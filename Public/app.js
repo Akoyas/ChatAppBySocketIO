@@ -241,7 +241,7 @@ function addMessage(msg, is_me=false){
   }
   // 自分の発言
   else if( is_me ){
-      li.innerHTML = `<div class="msg-me">${msg.text}</div><br/><br/><br/>`;
+      li.innerHTML = `<div class="msg-me">${msg.text}</div>`;
   }
   // それ以外の発言
   else{

@@ -64,6 +64,7 @@ ul li .msg-member {
     border-radius: 10px;
     padding: 10px;
     margin: 10px 0 10px 10px;
+    clear: both;
 }
 
 ul li .msg-me:after {
@@ -83,6 +84,7 @@ ul li .msg-me {
     border-radius: 10px;
     padding: 10px 14px 10px 14px;
     margin: 10px 0 10px 10px;
+    clear: both;
 }
 
 #chat{
@@ -145,6 +147,7 @@ ul li .msg-me {
 .msg-master {
     color: white;
     text-align: center;
+    clear: both;
 }
 .name{
   font-weight:bold;
