@@ -49,15 +49,15 @@
     border-color: #FFF;
 }
 
-ul li:before .msg-me {
+ul li .msg-member :before {
     content: '';
-    /* position: absolute;*/
-    top: 8px;
-    left: -40px;
-    border: 12px solid transparent;
+    position: absolute;
+    top: 5px;
+    left: -17px;
+    border: 6px solid transparent;
     border-right: 12px solid white;
 }
-ul li .msg-me {
+ul li .msg-member {
     display: inline-block;
     position: relative;
     background-color: white;
@@ -66,18 +66,18 @@ ul li .msg-me {
     margin: 10px 0 10px 10px;
 }
 
-ul li:before .msg-member {
+ul li .msg-me:after {
     content: '';
     position: absolute;
-    top: 8px;
-    left: -40px;
-    border: 12px solid transparent;
+    top: 5px;
+    left: -17px;
+    border: 6px solid transparent;
     border-right: 12px solid white;
-    background-color:lime;
 }
 
-ul li .msg-member {
+ul li .msg-me {
     display: inline-block;
+    float: right;
     position: relative;
     background-color: white;
     border-radius: 10px;
