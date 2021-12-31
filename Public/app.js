@@ -118,6 +118,15 @@ $("#frm-post").addEventListener("submit", (e)=>{
 });
 
 /**
+ * [イベント] 更新された
+ */
+window.addEventListener('unload', function (e) {
+  　// Socket.ioサーバへ送信
+  socket.emit("quit", { token: IAM.token });
+
+});
+
+/**
  * [イベント] 退室ボタンが押された
  */
 $("#frm-quit").addEventListener("submit", (e)=>{
@@ -228,15 +237,15 @@ function addMessage(msg, is_me=false){
 
   // マスターの発言
   if( msg.token === 0 ){
-    li.innerHTML = `<p class="msg-master"><span class="name"></span>${msg.text}</p>`;
+    li.innerHTML = `<div class="msg-master"><span class="name"></span>${msg.text}</div>`;
   }
   // 自分の発言
   else if( is_me ){
-    li.innerHTML = `<p class="msg-me"><span class="name">${name}</span>&gt; ${msg.text}</p>`;
+      li.innerHTML = `<div class="msg-me">${msg.text}</div><br/><br/><br/>`;
   }
   // それ以外の発言
   else{
-    li.innerHTML = `<p class="msg-member"><span class="name">${name}</span>&gt; ${msg.text}</p>`;
+    li.innerHTML = `<div class="msg-member"><div class="name">${name}さんのメッセージ</div> ${msg.text}</div>`;
   }
 
   // リストの最初に追加

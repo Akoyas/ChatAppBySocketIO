@@ -70,18 +70,18 @@ ul li .msg-me:after {
     content: '';
     position: absolute;
     top: 5px;
-    left: -17px;
+    right: -17px;
     border: 6px solid transparent;
-    border-right: 12px solid white;
+    border-left: 12px solid #8DE055;
 }
 
 ul li .msg-me {
     display: inline-block;
     float: right;
     position: relative;
-    background-color: white;
+    background-color: #8DE055;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 14px 10px 14px;
     margin: 10px 0 10px 10px;
 }
 
@@ -92,8 +92,8 @@ ul li .msg-me {
   display:flex;
 }
 #msglist {
-    width: 500px;
-    height: 300px;
+    width: 75%;
+    height: 800px;
     overflow-y: scroll;
     list-style-type: none;
     border: 0.5px solid #454545;
@@ -161,7 +161,7 @@ ul li .msg-me {
 }
 
 .msg-me{
-  color:blue;
+  color:black;
 }
 .msg-master {
     color: white;
@@ -172,12 +172,12 @@ ul li .msg-me {
 }
 
 #memberlist {
-    width: 150px;
-    height: 300px;
+    width: 25%;
+    height: 800px;
     overflow-y: scroll;
     list-style-image: url(circle-solid.svg);
     border: 1px solid gray;
-    padding: 5px 5px 5px 30px; /* è„âEâ∫ç∂ */
+    padding: 20px; /* è„âEâ∫ç∂ */
     margin-left: 10px;
 }
 .member-me{
