@@ -245,7 +245,7 @@ function addMessage(msg, is_me=false){
   }
   // それ以外の発言
   else{
-    li.innerHTML = `<div class="msg-member"><div class="name">${name}さんのメッセージ</div> ${msg.text}</div>`;
+    li.innerHTML = `<div class="msg-member"><div class="name">${name} さんのメッセージ</div> ${msg.text}</div>`;
   }
 
   // リストの最初に追加

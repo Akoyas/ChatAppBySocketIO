@@ -103,10 +103,12 @@ ul li .msg-me {
 #myname{
   font-weight: bold;
 }
-#msg{
-  width: 500px;
-  font-size: 14pt;
-  padding: 7px;
+#msg {
+    display: inline-block;
+    margin: 20px;
+    width: 500px;
+    font-size: 14pt;
+    padding: 8px;
 }
 /*
 #frm-post button{
@@ -122,25 +124,15 @@ ul li .msg-me {
 
 
 #frm-post button {
-    background: #eee;
-    border-radius: 6px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 280px;
-    padding: 10px 25px;
-    color: #313131;
-    transition: 0.3s ease-in-out;
-    font-weight: 500;
+    display: inline-block;
+    margin: 20px;
 }
 
 
-    #frm-post button:hover {
-        background: #313131;
-        color: #FFF;
-    }
+#frm-post button:hover {
+    background: #313131;
+    color: #FFF;
+}
 
 
 #frm-post button:hover:after {
@@ -160,7 +152,7 @@ ul li .msg-me {
 
 #memberlist {
     width: 25%;
-    height: 800px;
+    height: 200px;
     overflow-y: scroll;
     list-style-image: url(circle-solid.svg);
     border: 1px solid gray;
@@ -178,39 +170,17 @@ ul li .msg-me {
 }*/
 
 #frm-quit button {
-    background: #eee;
-    border-radius: 6px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 280px;
-    padding: 10px 25px;
-    color: #313131;
-    transition: 0.3s ease-in-out;
-    font-weight: 500;
+    display: inline-block;
+    margin: 20px;
 }
 
 
-    #frm-quit button:hover {
-        background: #313131;
-        color: #FFF;
-    }
+#frm-quit button:hover {
+    background: #313131;
+    color: #FFF;
+}
 
-    #frm-quit button:after {
-        content: '';
-        width: 5px;
-        height: 5px;
-        border-top: 3px solid #313131;
-        border-right: 3px solid #313131;
-        transform: rotate(45deg) translateY(-50%);
-        position: absolute;
-        top: 50%;
-        border-radius: 1px;
-        right: 20px;
-        transition: 0.3s ease-in-out;
-    }
+
 
 #frm-quit button:hover:after {
     border-color: #FFF;

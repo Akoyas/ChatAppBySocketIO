@@ -24,18 +24,24 @@
             </div>
             <form id="frm-myname" autocomplete="off">
                 <input class="form-control" type="text" id="txt-myname">
-                <br />
+                
                 <button>入室!</button>
             </form>
         </section>
         <!-- /名前を入力 -->
         <!-- STEP3. チャット開始 -->
         <section id="chat">
+            <!-- ログアウト -->
+            <form id="frm-quit">
+                <button>退室</button>
+            </form>
+
             <!-- 発言フォーム -->
             <form id="frm-post" autocomplete="off">
-                <span id="myname"></span><br>
-                <input class="form-control" type="text" id="msg"><br/><button>送信!</button><br/>
+                <span id="myname"></span><br />
+                <input class="form-control" type="text" id="msg"><button>送信!</button><br />
             </form>
+
 
             <section id="chat-main">
                 <!-- 発言 -->
@@ -45,10 +51,7 @@
                 <ul id="memberlist"></ul>
             </section>
 
-            <!-- ログアウト -->
-            <form id="frm-quit">
-                <button>退室</button>
-            </form>
+
         </section>
         <!-- /チャット本体 -->
 
