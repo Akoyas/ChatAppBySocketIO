@@ -208,14 +208,14 @@ ul li .msg-member {
   font-weight:bold;
 }
 
-#memberlist{
-  width: 150px;
-  height: 300px;
-  overflow-y: scroll;
-  list-style-image: url(circle-solid.svg);
-  border: 1px solid gray;
-  padding: 5px 5px 5px 30px;  
-  margin-left: 10px;
+#memberlist {
+    width: 150px;
+    height: 300px;
+    overflow-y: scroll;
+    list-style-image: url(circle-solid.svg);
+    border: 1px solid gray;
+    padding: 5px 5px 5px 30px; /* è„âEâ∫ç∂ */
+    margin-left: 10px;
 }
 .member-me{
   font-weight: bold;
