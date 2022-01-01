@@ -107,6 +107,8 @@ ul li .msg-me {
     padding: 20px;
     background-color: rgb(113,147,193);
     word-wrap: break-word;
+
+
 }
 #myname{
   font-weight: bold;
@@ -154,7 +156,7 @@ ul li .msg-me {
 .msg-master {
     color: white;
     text-align: center;
-    /*clear: both;*/
+    clear: both;
     word-wrap: break-word;
 }
 .name{
@@ -163,15 +165,23 @@ ul li .msg-me {
 
 #memberlist {
     width: 25%;
-    height: 200px;
+    height: auto;
     overflow-y: scroll;
     list-style-image: url(circle-solid.svg);
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
     padding: 20px; /* è„âEâ∫ç∂ */
-    margin-left: 10px;
+    /*margin-left: 10px;
     /*float: right;*/
     /*clear: both;*/
     word-wrap: break-word;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(30,30,80,.3);
+    /* right:0; */
+    line-height: 1;
+    position:fixed;
+    top: 50%;
+    z-index: 100;
+    padding: 1rem;
 }
 .member-me{
   font-weight: bold;
@@ -221,3 +231,15 @@ h1 {
     text-align:center;
     padding:1rem;
 }
+
+form#frm-quit {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(30,30,80,.3);
+    right: 0;
+    line-height: 1;
+    position: fixed;
+    top: 50%;
+    z-index: 100;
+    padding: 1rem;
+}
+
