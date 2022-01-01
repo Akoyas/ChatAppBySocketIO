@@ -23,8 +23,7 @@
                 名前を入力してください
             </div>
             <form id="frm-myname" autocomplete="off">
-                <input class="form-control" type="text" id="txt-myname">
-                
+                <input class="form-control" type="text" id="txt-myname" maxlength="7" placeholder="7文字まで">
                 <button>入室!</button>
             </form>
         </section>
@@ -37,18 +36,19 @@
             </form>
 
             <!-- 発言フォーム -->
-            <form id="frm-post" autocomplete="off">
+            <form id="frm-post" autocomplete="off">あなたの名前：
                 <span id="myname"></span><br />
-                <input class="form-control" type="text" id="msg"><button>送信!</button><br />
+                <input class="form-control" type="text" id="msg" maxlength="400" placeholder="400文字まで"><button>送信!</button><br />
             </form>
 
 
             <section id="chat-main">
+                <!-- メンバー一覧 -->
+                <ul id="memberlist"></ul>
                 <!-- 発言 -->
                 <ul id="msglist"></ul>
 
-                <!-- メンバー一覧 -->
-                <ul id="memberlist"></ul>
+
             </section>
 
 
