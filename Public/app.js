@@ -252,6 +252,7 @@ function addMessage(msg, is_me=false){
   list.insertBefore(li, list.firstChild);
 }
 
+
 /**
  * チャットマスターの発言
  *
@@ -302,4 +303,14 @@ function removeMemberList(token){
 
   // 内部変数から削除
   delete MEMBER[token];
+}
+
+
+window.onload = function () {
+    var trigger = document.getElementById('trigger');
+    trigger.onclick = function () {
+        var element = document.documentElement;
+        var bottom = element.scrollHeight - element.clientHeight;
+        window.scrollTo({ top: bottom, left: 0, behavior: 'smooth' });
+    }
 }
