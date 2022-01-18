@@ -15,7 +15,7 @@ html {
 }
 
 #frm-myname button {
-    background: #eee;
+   /* background: #eee;
     border-radius: 6px;
     position: relative;
     display: flex;
@@ -26,17 +26,17 @@ html {
     padding: 10px 25px;
     color: #313131;
     transition: 0.3s ease-in-out;
-    font-weight: 500;
+    font-weight: 500;*/
 }
 
 
 #frm-myname button:hover {
-    background: #313131;
-    color: #FFF;
+   /* background: #313131;
+    color: #FFF;*/
 }
 
 #frm-myname button:after {
-    content: '';
+   /* content: '';
     width: 5px;
     height: 5px;
     border-top: 3px solid #313131;
@@ -46,7 +46,8 @@ html {
     top: 50%;
     border-radius: 1px;
     right: 20px;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;*/
+
 }
 
 #frm-myname button:hover:after {
@@ -131,27 +132,32 @@ ul li .msg-me {
   font-size: 12pt;
 }*/
 
-
+form#frm-post {
+    position: fixed;
+    bottom: 0;
+}
 
 
 
 
 
 #frm-post button {
-    display: inline-block;
+   /* display: inline-block;
     margin: 20px;
+    */
 }
 
 
-#frm-post button:hover {
-    background: #313131;
-    color: #FFF;
-}
+    #frm-post button:hover {
+      /*  background: #313131;
+        color: #FFF;
+        */
+    }
 
 
-#frm-post button:hover:after {
-    border-color: #FFF;
-}
+    #frm-post button:hover:after {
+        /* border-color: #FFF;*/
+    }
 
 .msg-me{
   color:black;
@@ -197,21 +203,21 @@ ul li .msg-me {
 }*/
 
 #frm-quit button {
-    display: inline-block;
-    margin: 20px;
+    /*display: inline-block;
+    margin: 20px;*/
 }
 
 
-#frm-quit button:hover {
-    background: #313131;
-    color: #FFF;
-}
+    #frm-quit button:hover {
+        /* background: #313131;*/
+        /*color: #FFF;*/
+    }
 
 
 
-#frm-quit button:hover:after {
-    border-color: #FFF;
-}
+        #frm-quit button:hover:after {
+            /* border-color: #FFF;*/
+        }
 
 
 
@@ -256,3 +262,31 @@ a {
     margin: 1rem 0;
     cursor: pointer;
 }
+
+.button02 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 300px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cccccc;
+    border-radius: 50vh;
+}
+
+    .button02 a::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-top: 3px solid #333333;
+        border-right: 3px solid #333333;
+        transform: rotate(45deg);
+    }
+
+    .button02 a:hover {
+        text-decoration: none;
+        background-color: #bbbbbb;
+    }
